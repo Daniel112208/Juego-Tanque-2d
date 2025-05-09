@@ -1,0 +1,68 @@
+/* Fondo y tipografía base */
+body {
+	margin: 0;
+	padding: 0;
+	background: linear-gradient(to bottom, #2b2b2b, #0f0f0f);
+	font-family: 'Orbitron', sans-serif;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	flex-direction: column;
+  }
+  
+  /* Contenedor principal */
+  .container {
+	width: 95%;
+	max-width: 800px;
+	padding: 20px;
+	background: rgba(20, 20, 20, 0.8);
+	border: 2px solid #444;
+	border-radius: 12px;
+	box-shadow: 0 0 20px rgba(0, 255, 0, 0.2);
+	text-align: center;
+  }
+  
+  /* Título responsivo */
+  .titulo {
+	font-size: clamp(24px, 5vw, 48px);
+	color: #ff9800;
+	text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+	margin-bottom: 20px;
+  }
+  
+  /* Canvas adaptativo */
+  canvas {
+	width: 80%;
+	height: auto;
+	background: #555;
+	border: 3px solid #0f0;
+	border-radius: 8px;
+	box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
+	cursor: crosshair;
+  }
+  
+  /* Sección de instrucciones */
+  .instrucciones {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	gap: 10px;
+	margin-bottom: 20px;
+	font-size: clamp(14px, 2vw, 18px);
+	color: #ccc;
+  }
+  
+  .izquierda, .derecha {
+	width: 100%;
+	text-align: center;
+  }
+  
+  /* Para pantallas más anchas: muestra lado a lado */
+  @media (min-width: 600px) {
+	.izquierda, .derecha {
+	  width: 45%;
+	}
+  }
+  

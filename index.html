@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Juego de Tanques</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <div class="container">
+	<h1 class="titulo">🔥 Juego de Tanques 🔥</h1>
+	<div class="instrucciones">
+		<div class="izquera">
+		🖱️ Haz <strong>click</strong> para empezar.<br>
+		¡Destruye todos los objetivos!  
+		</div>
+		<div class="derecha">
+		🎯 Usa el <strong>mouse</strong> para mover la mira.<br>
+    	🖱️ Haz <strong>clic derecho</strong> para disparar.<br>
+		</div>
+	</div>
+    
+    <canvas id="canvas" width="650" height="450">
+      Tu navegador no soporta el canvas de HTML5.
+    </canvas>
+
+
+    <!-- Audios -->
+    <audio id="boing">
+      <source src="sonidos/boing.mp3">
+      <source src="sonidos/boing.ogg">
+    </audio>
+    <audio id="disparo">
+      <source src="sonidos/disparo.mp3">
+      <source src="sonidos/disparo.ogg">
+    </audio>
+    <audio id="intro">
+      <source src="sonidos/intro.mp3">
+      <source src="sonidos/intro.ogg">
+    </audio>
+    <audio id="fin">
+      <source src="sonidos/gameOver.mp3">
+      <source src="sonidos/gameOver.ogg">
+    </audio>
+    <audio id="boom">
+      <source src="sonidos/boom.mp3">
+      <source src="sonidos/boom.ogg">
+    </audio>
+  </div>
+</body>
+</html>
